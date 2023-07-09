@@ -19,14 +19,6 @@ COPY requirements.txt .
 # RUN pip3 install --no-cache-dir -r requirements.txt
 RUN pip3 install -r requirements.txt
 
-# Define the volumes
-# VOLUME /app/images
-# VOLUME /app/output
-
-# Copy the Python script and image files to the container
-# COPY script.py .
-# COPY images/ app/images/
-# COPY output/ app/output/
 COPY . .
 
 # Set the entrypoint command

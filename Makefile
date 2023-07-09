@@ -18,9 +18,6 @@ run:
 	docker run -d \
 		--rm \
 		-v .:/app \
-		-v ./images/source:/app/images/source \
-		-v ./images/temp:/app/images/temp \
-		-v ./images/output:/app/images/output \
 		--name python-ocr \
 		python-ocr
 

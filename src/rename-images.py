@@ -1,7 +1,7 @@
 import os
 import re
 
-source_directory = "/app/images/source"
+source_directory = "../images/source"
 
 try:
     # Get a list of all image files in the source directory

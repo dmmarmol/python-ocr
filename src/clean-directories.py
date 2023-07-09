@@ -13,11 +13,17 @@ def delete_directory_contents(directory):
         except Exception as e:
             print(f'Failed to delete {file_path}. Reason: {str(e)}')
 
-output_directory = '/app/images/output'
-temp_directory = '/app/images/temp'
-
-# Delete the contents of the output directory
-delete_directory_contents(output_directory)
-
-# Delete the contents of the temp directory
-delete_directory_contents(temp_directory)
+def cleanDirectories():
+    print(f"⌛️ About to clean the following directories:")
+    directories = [
+        '../images/output',
+        '../images/temp',
+        '../text/output'
+    ]
+    
+    # Delete the contents of each directory
+    for directory in directories:
+        delete_directory_contents(directory)
+        print(f"✅ Clean ${directory}")
+        
+cleanDirectories()

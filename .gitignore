@@ -1,4 +1,4 @@
 tess_*
-images/output/
-images/source/
-images/temp/
+*/output/
+*/source/
+*/temp/

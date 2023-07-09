@@ -1,4 +1,3 @@
-from PIL import Image
 import os
 
 # Path to the directory containing the images
