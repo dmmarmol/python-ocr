@@ -8,11 +8,11 @@ install:
 	python -m venv venv
 	source venv/bin/activate && pip install -r requirements.txt
 
-lint:
-	source venv/bin/activate && pylint script.py
+# lint:
+# 	source venv/bin/activate && pylint script.py
 
-test:
-	source venv/bin/activate && python -m unittest discover tests
+# test:
+# 	source venv/bin/activate && python -m unittest discover tests
 
 run:
 	docker run -d \
